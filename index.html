@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lin-z Chang's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="nav.css">
+    <script src="jquery-3.3.1.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <img src="Images/cliffs.jpg" alt="Cliffs of Moher" class="profile-image">
+      <h1 class="tag">Hi, I’m Lin-z.</h1>
+      <p class="tag location">Based in Grosse Pointe Woods, MI</p>
+    </header>
+
+    <div class="nav">
+      <div class="nav-right">
+        <a class="active" href="index.html">Home</a>
+        <a href="About/about.html">About</a>
+        <a href="Portfolio/portfolio.html">Portfolio</a>
+      </div>
+    </div>
+
+    <br>
+    <div class="general center">
+      <p>Welcome!  I am a software developer in training at Quicken Loans.  I'm currently learning C# .Net at Grand Circus.</p>
+    </div>
+    <br>
+    <div class="general container">
+      <div class="left">
+        <p>I was born in Charleston, SC and moved to Toledo, OH when I was four years old.
+          I grew up in the '90s surrounded by corn fields. During the school year I collected gel pens and tried to keep my Tamagatchi alive,
+          and I spent summer days trading Pokemon cards between super-soaker fights.</p>
+        <p>I first learned to code in middle school, if making MySpace and NeoPets layouts counts as web-design.
+          I graduated from Perrysburg High School in 2009 and attended college at Bowling Green State University.</p>
+        <p>I graduatedin 2013 from BGSU with a bachelor of science, majoring in Environmental Science.</p>
+        <p>I moved to Michigan in 2016 and started my career at the Rock FOC at Amrock (formerly Title Source) in Title Production.
+        I am now a member of Dev.Build 2.0 at Quicken Loans, learning software development skills.</p>
+      </div>
+      <div id="map"></div>
+    </div>
+    <br>
+    <div class="general center">
+      <p>I spend most of my free-time chasing after my puppy Zoey, or catering to cats' (Harrison and Kingsley) every need.</p>
+      <p>When I escape the animals, I like to watch Game of Thrones and This Is Us.</p>
+    </div>
+
+
+
+    <footer>
+      <a href="https://linkedin.com/in/lin-z-chang" target="_blank"><img src="Images/linkedin.png" alt="Linked In" class="social"></a>
+      contact: Lin-zChang@quickenloans.com
+      <a href="https://github.com/linzchang" target="_blank"><img src="Images/github.png" alt="Github" class="social"></a>
+    </footer>
+  </body>
+
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 41.665, lng: -83.575},
+        zoom: 10
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSOiM7oEhkn046RMj9TLYYYuVdMIGGj-Q&callback=initMap"
+  async defer></script>
+</html>
